@@ -26,11 +26,49 @@
     font-size: 32px;
 }
 
+/* Estilos gerais */
 .inicio {
     color: #283C40;
     font-family: "Rubik", sans-serif;
     font-size: 64px;
     display: flex;
     flex-direction: column;
-
+    align-items: flex-start;
+    padding: 20px;
 }
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.botao-container {
+    display: flex;
+    align-items: center;
+}
+
+.botao {
+    background-color: #F2968F;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.img1 {
+    position: relative; /* Permite ajustar a posição da imagem */
+    top: -100px; /* Move a imagem 100px para cima */
+    float: right; /* Mantém a imagem à direita */
+    width: 50%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+
