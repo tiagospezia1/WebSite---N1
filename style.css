@@ -57,12 +57,19 @@ nav a:hover {
 .service {
     background-color: #e8f5e9;
 }
-footer {
+.footer-servicos {
     background-color: #81c784;
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 40px;
+    margin-top: 125px;
+}
+.footer-produtos {
+    background-color: #81c784;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 90px;
 }
 .section-title {
     text-align: center;
