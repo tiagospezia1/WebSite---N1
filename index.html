@@ -1,11 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet Shop - O Mundo dos Pets</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #81c784;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #66bb6a;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product, .service {
+            background-color: white;
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .product img, .service img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product h3, .service h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #388e3c;
+        }
+        .product p, .service p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+        .service {
+            background-color: #e8f5e9;
+        }
+        footer {
+            background-color: #81c784;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #388e3c;
+            margin-top: 40px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #66bb6a;
+        }
+
+        /* Animações para as seções */
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+            padding: 20px;
+            display: none;
+        }
+
+        /* Ativa a transição de visibilidade para as seções quando elas são selecionadas */
+        section:target {
+            opacity: 1;
+            transform: translateY(0);
+            display: block;
+        }
+
+        /* Começa a página com a primeira seção visível */
+        #servicos {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Pet Shop - O Mundo dos Pets</h1>
+        <p>Seu pet merece o melhor!</p>
+    </header>
+
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="container">
+            <div class="service">
+                <img src="https://via.placeholder.com/250" alt="Banho e Tosa">
+                <h3>Banho e Tosa</h3>
+                <p>Oferecemos serviços de banho e tosa para deixar seu pet limpinho e saudável.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/250" alt="Cuidados Veterinários">
+                <h3>Cuidados Veterinários</h3>
+                <p>Consultas veterinárias para garantir o bem-estar do seu animal.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/250" alt="Hospedagem para Pets">
+                <h3>Hospedagem para Pets</h3>
+                <p>Hospedagem confortável e segura enquanto você viaja ou precisa se ausentar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="section">
+        <h2 class="section-title">Produtos para seu Pet</h2>
+        <div class="container">
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Ração para Cachorro">
+                <h3>Ração para Cachorro</h3>
+                <p>Ração de alta qualidade para o seu cachorro. Ideal para todas as idades.</p>
+                <p>R$ 89,90</p>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Brinquedo para Gato">
+                <h3>Brinquedo para Gato</h3>
+                <p>Brinquedo divertido para entreter seu gato por horas.</p>
+                <p>R$ 39,90</p>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Camisa para Cão">
+                <h3>Camisa para Cão</h3>
+                <p>Camisa estilosa e confortável para o seu melhor amigo.</p>
+                <p>R$ 59,90</p>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Cama para Gato">
+                <h3>Cama para Gato</h3>
+                <p>Cama aconchegante para o seu felino dormir com conforto.</p>
+                <p>R$ 129,90</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <h2 class="section-title">Fale Conosco</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pet Shop - O Mundo dos Pets | Todos os direitos reservados</p>
+    </footer>
+
 </body>
 </html>
