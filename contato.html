@@ -4,38 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Pet Shop</title>
-    <link rel="stylesheet" href="style(contato).css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #000000;
+            padding: 25px;
+            color: white;
+        }
+        .menu-nav a {
+            margin: 0 40px;
+            text-decoration: none;
+            color: white;
+        }
+        .contact-form {
+            max-width: 300px;
+            margin: 200px auto;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin: 6px 0;
+            padding: 15px;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Cabeçalho -->
-    <header class="cabecalho">
+    <header>
         <nav class="menu-nav">
-            <a class="menu" href="index.html">Sobre Nós</a>
-            <a class="menu" href="servicos.html">Serviços</a>
-            <a class="menu" href="produtos.html">Produtos</a>
-            <a class="menu" href="contato.html">Contato</a>
+            <a href="index.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
-    <!-- Navegação -->
-
     
-    <!-- Contato -->
-    <section id="contato">
-        <h2 class="section-title">Fale Conosco</h2>
-        <div class="contact-form">
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu E-mail" required>
-            <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="footer-contato">
-        <a target="_blank" href="https://www.instagram.com/"><img width="48" height="50" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
-        <a target="_blank" href="https://www.whatsapp.com/"><img width="48" height="50" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+    <h2>Fale Conosco</h2>
+    <div class="contact-form">
+        <input type="text" placeholder="Seu Nome" required>
+        <input type="email" placeholder="Seu E-mail" required>
+        <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+    </div>
     
-
 </body>
 </html>
