@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
+}
+
+.menu-nav {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 32px;
+}
+
+.menu {
+    color: black;
+    font-family: "Rubik", sans-serif;
+    font-size: 32px;
+}
+
+.inicio {
+    color: #283C40;
+    font-family: "Rubik", sans-serif;
+    font-size: 64px;
+    display: flex;
+    flex-direction: column;
+
+}
