@@ -61,12 +61,14 @@
     text-align: center;
 }
 
+
+
 .img1 {
-    position: relative; /* Permite ajustar a posição da imagem */
-    top: -100px; /* Move a imagem 100px para cima */
-    float: right; /* Mantém a imagem à direita */
-    width: 50%; /* Ajusta a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    position: relative;
+    top: -100px;
+    left: 150px;  
+    width: 744px;
+    height: auto;
 }
 
 
