@@ -64,11 +64,11 @@
 
 
 .img1 {
-    position: relative;
-    top: -100px;
-    left: 150px;  
-    width: 744px;
+    width: 100%;
     height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
 }
 
 
