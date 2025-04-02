@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "Rubik", sans-serif;
+
 }
 
 .cabecalho {
@@ -15,19 +17,17 @@
 }
 
 .menu-nav {
-  font-family: "Inter", sans-serif;
   display: flex;
   gap: 32px;
 }
 
 .menu {
   color: black;
-  font-family: "Rubik", sans-serif;
   font-size: 32px;
 }
 
 /* Estilo para a seção de produtos */
-#servicos {
+.produtos {
   padding: 40px 20px;
   background-color: #f9f9f9;
   text-align: center;
@@ -37,11 +37,11 @@
   font-size: 90px;
   margin-bottom: 20px;
   color: #333;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   /* Permite quebra de linha em telas menores */
   gap: 20px;
@@ -50,7 +50,7 @@
   /* Centraliza os itens na linha */
 }
 
-.service-1 {
+.product-1 {
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 16px;
@@ -62,13 +62,13 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.service-1:hover {
+.product-1:hover {
   transform: scale(1.05);
   /* Aumenta o tamanho no hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.service-1 img {
+.product-1 img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -76,21 +76,19 @@
   margin-bottom: 10px;
 }
 
-.service-1 h3 {
+.product-1 h3 {
   font-size: 20px;
   color: #555;
   margin: 10px 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.service-1 p {
+.product-1 p {
   font-size: 16px;
   color: #777;
   margin: 8px 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.service-2 {
+.product-2 {
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 16px;
@@ -102,72 +100,65 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.service-2:hover {
+.product-2:hover {
   transform: scale(1.05);
   /* Aumenta o tamanho no hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.service-2 img {
+.product-2 img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  /* Bordas arredondadas para a imagem */
   margin-bottom: 10px;
 }
 
-.service-2 h3 {
+.product-2 h3 {
   font-size: 20px;
   color: #555;
   margin: 10px 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.service-2 p {
+.product-2 p {
   font-size: 16px;
   color: #777;
   margin: 8px 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
-.service-3 {
+.product-3 {
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 16px;
   max-width: 300px;
   text-align: left;
-  /* Alinha o conteúdo à esquerda */
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.service-3:hover {
+.product-3:hover {
   transform: scale(1.05);
-  /* Aumenta o tamanho no hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.service-3 img {
+.product-3 img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  /* Bordas arredondadas para a imagem */
   margin-bottom: 10px;
 }
 
-.service-3 h3 {
+.product-3 h3 {
   font-size: 20px;
   color: #555;
   margin: 10px 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.service-3 p {
+.product-3 p {
   font-size: 16px;
   color: #777;
   margin: 8px 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+
