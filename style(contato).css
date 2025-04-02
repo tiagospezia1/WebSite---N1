@@ -51,7 +51,12 @@ body {
 .contact-form {
     max-width: 300px;
     margin: 200px auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
 input, textarea, button {
     width: 100%;
     margin: 6px 0;
@@ -59,9 +64,46 @@ input, textarea, button {
     border: 3px solid #ccc;
     border-radius: 5px;
 }
+
 button {
     background-color: #000000;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.rede-social {
+    font-family: "Inter", sans-serif;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+}
+
+.github {
+    color: black;
+}
+
+.linkedin {
+    color: black;
+}
+
+.instagram {
+    color: black;
+}
+
+.tiktok {
+    color: black;
+}
+
+.whatsapp {
+    color: black;
 }
