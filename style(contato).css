@@ -1,17 +1,19 @@
+/* Importa a fonte Rubik */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-
+/* Reseta margens, paddings e decorações padrão */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
-
 }
 
+body {
+    background: linear-gradient(to bottom, #f0f8ff, #ffffff); /* Gradiente de azul claro para branco */
+}
+
+/* Define o layout do cabeçalho */
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -19,26 +21,28 @@
     padding: 24px;
 }
 
+/* Configura o menu de navegação */
 .menu-nav {
     display: flex;
     gap: 32px;
 }
 
+/* Estiliza os itens do menu */
 .menu {
     color: black;
     font-size: 32px;
 }
 
-
-
+/* Define o layout principal da página */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Garante que o main ocupe toda a largura */
+    width: 100%;
 }
 
+/* Estiliza o formulário de contato */
 .contact-form {
     max-width: 300px;
     margin: 0 auto;
@@ -48,6 +52,7 @@ main {
     flex-direction: column;
 }
 
+/* Estiliza inputs, textarea e botão */
 input, textarea, button {
     width: 100%;
     margin: 6px 0;
@@ -56,6 +61,7 @@ input, textarea, button {
     border-radius: 5px;
 }
 
+/* Estiliza o botão */
 button {
     background-color: #000000;
     color: white;
@@ -63,23 +69,43 @@ button {
     cursor: pointer;
 }
 
+/* Estiliza o título principal */
 h2 {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 100px;
 }
 
+/* Configura a seção de redes sociais */
 .rede-social {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 10px; /* Adicionado para espaçamento entre os ícones */
+    gap: 10px;
 }
 
+/* Estiliza o ícone do Instagram */
 .instagram {
     color: black;
 }
 
+/* Estiliza o ícone do WhatsApp */
 .whatsapp {
     color: black;
+}
+
+.endereco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.telefone-fixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
 }
