@@ -6,7 +6,8 @@
   padding: 0;
   text-decoration: none;
   font-family: "Rubik", sans-serif;
-  background: linear-gradient(to right, #e3f7fc, #f9f9f9); /* Gradiente azul claro mais suave e branco */
+  background: linear-gradient(to right, #e3f7fc, #f9f9f9);
+  /* Gradiente azul claro mais suave e branco */
 
 
 }
@@ -56,12 +57,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 20px;
   justify-content: center;
 }
 
 /* Estilo individual de cada produto */
 .product {
+  display: flex;
+  flex-direction: column;
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 16px;

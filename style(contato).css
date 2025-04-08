@@ -9,9 +9,7 @@
     font-family: "Rubik", sans-serif;
 }
 
-body {
-    background: linear-gradient(to bottom, #f0f8ff, #ffffff); /* Gradiente de azul claro para branco */
-}
+
 
 /* Define o layout do cabeçalho */
 .cabecalho {
