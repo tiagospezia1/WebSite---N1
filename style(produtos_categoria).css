@@ -7,11 +7,15 @@
   padding: 0;
   text-decoration: none;
   font-family: "Rubik", sans-serif;
-  background: linear-gradient(to right, #e3f7fc, #f9f9f9);
-  /* Gradiente azul claro mais suave e branco */
 
 }
 
+body {
+  height: 100%;
+  background-image:url(./img/cute-pet-accessories-still-life-concept.jpg);
+  background-size: 100%;
+  color: black;
+}
 
 /* Estilo para o cabeçalho principal da página */
 .cabecalho {
@@ -19,7 +23,6 @@
   flex-direction: row;
   justify-content: center;
   padding: 24px;
-  border-bottom: 2px solid #555;
 }
 
 /* Container para o menu de navegação */
@@ -34,18 +37,11 @@
   font-size: 32px;
 }
 
-/* Seção que contém os produtos */
-.produtos {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
 /* Título principal da seção de produtos */
-.section-title {
-  font-size: 90px;
+.titulo {
+  text-align: center;
+  font-size: 65px;
   margin-bottom: 20px;
-  color: #333;
 }
 
 /* Container flexível que organiza os produtos */
@@ -58,14 +54,12 @@
 
 /* Estilo para os cartões individuais de produtos */
 .product-1, .product-2, .product-3 {
-  border: 2px solid #ccc;
   border-radius: 10px;
   padding: 16px;
   max-width: 300px;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.8);
-  /* Fundo com transparência */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.258);
+  transition: transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -86,13 +80,11 @@
 /* Estilo para os títulos dos produtos */
 .product-1 h3, .product-2 h3, .product-3 h3 {
   font-size: 20px;
-  color: #555;
   margin: 10px 0;
 }
 
 /* Estilo para as descrições dos produtos */
 .product-1 p, .product-2 p, .product-3 p {
   font-size: 16px;
-  color: #777;
   margin: 8px 0;
 }

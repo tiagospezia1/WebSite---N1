@@ -5,14 +5,16 @@
   padding: 0;
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
+
 }
 
 /* Remove margens e paddings padrão, desativa sublinhados em links e define o box-sizing como border-box. */
 
 body {
   height: 100%;
-  overflow-x: hidden;
-  background-color: #f9f9f9;
+  background-image:url(./img/cute-pet-accessories-still-life-concept.jpg);
+  background-size: 100%;
+  color: black;
 }
 
 /* Define altura total para html e body, desativa o scroll horizontal e define a cor de fundo. */
@@ -22,8 +24,6 @@ body {
   flex-direction: row;
   justify-content: center;
   padding: 24px;
-  border-bottom: 2px solid #555;
-
 }
 
 /* Estiliza o cabeçalho com layout flexível, centralizando o conteúdo horizontalmente. */
@@ -42,18 +42,14 @@ body {
 
 /* Define a cor e o tamanho da fonte dos itens do menu. */
 
-.servicos {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
+
 
 /* Estiliza a seção de serviços com padding, cor de fundo e centralização do texto. */
 
-.section-title {
-  font-size: 90px;
+.titulo {
+  text-align: center;
+  font-size: 65px;
   margin-bottom: 20px;
-  color: #333;
 }
 
 /* Define o estilo do título da seção, incluindo tamanho da fonte, margem inferior e cor. */
@@ -70,13 +66,11 @@ body {
 /* Define o container como flexível, permite quebra de linha e centraliza os itens com espaçamento. */
 
 .service-1, .service-2, .service-3 {
-  border: 2px solid #ccc;
   border-radius: 10px;
   padding: 16px;
   max-width: 300px;
   text-align: left;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.258);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -102,7 +96,6 @@ body {
   font-size: 20px;
   text-align: center;
   align-items: center;
-  color: #555;
   margin: 10px 0;
 }
 
@@ -110,7 +103,6 @@ body {
 
 .service-1 p, .service-2 p, .service-3 p {
   font-size: 16px;
-  color: #777;
   margin: 8px 0;
 }
 

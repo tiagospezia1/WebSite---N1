@@ -9,7 +9,12 @@
     font-family: "Rubik", sans-serif;
 }
 
-
+body {
+    height: 100%;
+    background-image:url(./img/cute-pet-accessories-still-life-concept.jpg);
+    background-size: 100%;
+    color: black;
+  }
 
 /* Define o layout do cabeçalho */
 .cabecalho {
